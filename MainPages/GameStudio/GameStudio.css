@@ -1,0 +1,24 @@
+
+        .block1{
+    	    border: solid 1px red;
+            font: 15px Calibri;
+            margin: 0px;
+
+        }
+
+        .demo3 {
+            width: 150px;
+    	    border: solid 1px red;
+            padding: 5px; 
+            font: 15px Calibri;
+            position:relative;
+        }
+
+        .test 
+        {
+            position: relative;
+            left: 100px;
+            top: 100px;
+        }
+
+    
