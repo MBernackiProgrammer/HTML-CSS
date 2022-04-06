@@ -6,45 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Studio</title>
 
-    
-    
+    <link rel="stylesheet" type="text/css"href="mystyle.css">
+
     <style>
-        .block1{
-    	    border: solid 1px red;
-            font: 15px Calibri;
-            margin: 0px;
-
+        div.fixed {
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          border: 3px solid #73AD21;
         }
-
-        .demo3 {
-            width: 150px;
-    	    border: solid 1px red;
-            padding: 5px; 
-            font: 15px Calibri;
-            position:relative;
-        }
-
-        .test 
-        {
-            position: relative;
-            left: 100px;
-            top: 100px;
-        }
-
     </style>
 
 </head>
-<body>
-    
-    <div class = "block1" id = "block">
-        
-        <h1 class = "test1">Big some tekst</h1>
+
+<body >
+
+    <div class = "block1" id = "block" name = "block">
+
+        <h1 id = "BTS11" class = "t">Big some tekst</h1>
+        <p>Some text</p>
+
+        <h1 id = "BTS12">Big some tekst</h1>
         <p>Some text</p>
 
     </div>
 
-    <div class = "block" id = "block">
-        <p id = "demo2">Text 1</p>
+    <div class = "block1" id = "block1" name = "block">
+
+        <h1 class = "BTS21">Big some tekst</h1>
+        <p>Some text</p>
+
+        <h1 class = "BTS22">Big some tekst</h1>
+        <p>Some text</p>
 
     </div>
 
@@ -53,40 +46,13 @@
     </div>
 
     <p id = "testid">Text 1</p>
-    <button type="button" onclick="ImproveSize()">Click Me</button>
-</body>
-<script>
-    function ImproveSize()
-    {
-        //var element = document.getElementById("block");
-        var element = document.getElementsByClassName("block");
+    <button type="button">Click Me</button>
 
-        var h = innerHeight;
-        var w = innerWidth;
-        
-        var widthReady = String(w);
-        widthReady = widthReady + "px";
-        
-        element.style.height = widthReady;
-        
-
-        var heightReady = String(h);
-        heightReady = heightReady + "px";
-        
-        element.style.height = heightReady;
-        element.style.width = widthReady;    
-    }
+    <div class="fixed">
+        <button>Up</button>
+        <button>Down</button>
+    </div>
     
-    function changeWidth(ele, wd) {
-        
-
-        
-
-        z.innerHTML = h;
-        ele.style.width = wd;
-        ele.style.height = h;
-    }
-
-    ImproveSize();
-</script>
+</body>
+<script>src="FILE.JS"</script>
 </html>
