@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Studio</title>
 
+    <script>src="GameStudio.js"</script>
     <link rel="stylesheet" type="text/css"href="mystyle.css">
 
     <style>
@@ -52,7 +53,32 @@
         <button>Up</button>
         <button>Down</button>
     </div>
-    
 </body>
-<script>src="FILE.JS"</script>
+<script>
+    function ImproveSize()
+{
+    var element = document.getElementById("block");
+    //var element = document.getElementsById("block");
+    document.get
+    
+    var h = innerHeight;
+    var w = innerWidth;
+    
+    var widthReady = String(w);
+    widthReady = widthReady + "px";
+    
+    element.style.height = widthReady;
+    
+
+    var heightReady = String(h);
+    heightReady = heightReady + "px";
+    
+    element.style.height = heightReady;
+    //element.style.width = widthReady; 
+    
+    document.getElementById("block1").style.height = heightReady;
+    document.getElementById("block1").style.width = widthReady;
+}
+ImproveSize();
+</script>
 </html>
