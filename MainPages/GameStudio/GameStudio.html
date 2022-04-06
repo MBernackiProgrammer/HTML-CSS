@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Studio</title>
+
+    
+    
+    <style>
+        .block1{
+    	    border: solid 1px red;
+            font: 15px Calibri;
+            margin: 0px;
+
+        }
+
+        .demo3 {
+            width: 150px;
+    	    border: solid 1px red;
+            padding: 5px; 
+            font: 15px Calibri;
+            position:relative;
+        }
+
+        .test 
+        {
+            position: relative;
+            left: 100px;
+            top: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class = "block1" id = "block">
+        
+        <h1 class = "test1">Big some tekst</h1>
+        <p>Some text</p>
+
+    </div>
+
+    <div class = "block" id = "block">
+        <p id = "demo2">Text 1</p>
+
+    </div>
+
+    <div class = "demo3">
+    
+    </div>
+
+    <p id = "testid">Text 1</p>
+    <button type="button" onclick="ImproveSize()">Click Me</button>
+</body>
+<script>
+    function ImproveSize()
+    {
+        //var element = document.getElementById("block");
+        var element = document.getElementsByClassName("block");
+
+        var h = innerHeight;
+        var w = innerWidth;
+        
+        var widthReady = String(w);
+        widthReady = widthReady + "px";
+        
+        element.style.height = widthReady;
+        
+
+        var heightReady = String(h);
+        heightReady = heightReady + "px";
+        
+        element.style.height = heightReady;
+        element.style.width = widthReady;    
+    }
+    
+    function changeWidth(ele, wd) {
+        
+
+        
+
+        z.innerHTML = h;
+        ele.style.width = wd;
+        ele.style.height = h;
+    }
+
+    ImproveSize();
+</script>
+</html>
