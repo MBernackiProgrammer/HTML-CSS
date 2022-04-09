@@ -1,4 +1,4 @@
-.block1
+.block
 {
     border: solid 1px red;
     font: 15px Calibri;
@@ -6,26 +6,38 @@
     position: relative;
 }
 
-#BTS11 
+.block ul
 {
-    position:relative;
-    left : 500px;
+    list-style: none;
 }
 
-#BTS12
-{
+#HBB11{
     position: relative;
+    width: 500px;
+    height: 100px;
 }
 
-#BTS21 
+#HBB12
 {
     position: relative;
+    width: 500px;
+    height: 100px;
 }
 
-#BTS22
+#HBB21
 {
     position: relative;
+    width: 500px;
+    height: 100px;
 }
+
+#HBB22
+{
+    position: relative;
+    width: 500px;
+    height: 100px;
+}
+
 .fixed {
     position: fixed;
     bottom: 0;
