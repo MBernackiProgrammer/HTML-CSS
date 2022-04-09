@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Studio</title>
 
-    <script>src="GameStudio.js"</script>
+    <script type="text/javascript" src="GameStudio.js"></script>
+    
     <link rel="stylesheet" type="text/css"href="mystyle.css">
 
     <style>
@@ -15,6 +16,11 @@
           bottom: 0;
           right: 0;
           border: 3px solid #73AD21;
+        }
+
+        html 
+        {
+            scroll-behavior: smooth;
         }
     </style>
 
@@ -50,35 +56,20 @@
     <button type="button">Click Me</button>
 
     <div class="fixed">
-        <button>Up</button>
-        <button>Down</button>
+        <button onclick="Down()">Up</button>
+        <p></p>
+        <button onclick="Up()">Down</button>
     </div>
-</body>
-<script>
-    function ImproveSize()
-{
-    var element = document.getElementById("block");
-    //var element = document.getElementsById("block");
-    document.get
-    
-    var h = innerHeight;
-    var w = innerWidth;
-    
-    var widthReady = String(w);
-    widthReady = widthReady + "px";
-    
-    element.style.height = widthReady;
-    
 
-    var heightReady = String(h);
-    heightReady = heightReady + "px";
+    <a href="#block">TEXT</a>
+
+    <button id="button" oncontextmenu="event.preventDefault();">Click here with your mouse...</button>
+    <p id="log"></p>
+</body>
+
+<script>
     
-    element.style.height = heightReady;
-    //element.style.width = widthReady; 
-    
-    document.getElementById("block1").style.height = heightReady;
-    document.getElementById("block1").style.width = widthReady;
-}
 ImproveSize();
+
 </script>
 </html>
