@@ -1,12 +1,9 @@
-
-
 .block1
 {
     border: solid 1px red;
     font: 15px Calibri;
     margin: 0px;
-    
-    
+    position: relative;
 }
 
 #BTS11 
@@ -14,14 +11,8 @@
     position: relative;
 }
 
-.t{
-    position: relative;
-    left:500px;
-}
 #BTS12
 {
-    
-    left:500px;
     position: relative;
 }
 
