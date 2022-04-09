@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="Pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Studio</title>
+
+    <script type="text/javascript" src="GameStudio.js"></script>
+    
+    <link rel="stylesheet" type="text/css"href="mystyle.css">
+
+    <style>
+        div.fixed {
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          border: 3px solid #73AD21;
+        }
+
+        html 
+        {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body onscroll="myFunction1()">
+
+    <div class = "block1" id = "block" name = "block">
+
+        <h1 id = "BTS11" class = "t">Big some tekst1</h1>
+        <p>Some text1</p>
+
+        <h1 id = "BTS12">Big some tekst1</h1>
+        <p>Some text1</p>
+
+    </div>
+
+    <div class = "block1" id = "block1" name = "block">
+
+        <h1 class = "BTS21">Big some tekst2</h1>
+        <p>Some text2</p>
+
+        <h1 class = "BTS22">Big some tekst2</h1>
+        <p>Some text2</p>
+
+    </div>
+
+    <div class = "block1" id = "block2" name = "block">
+
+        <h1 class = "BTS21">Big some tekst2</h1>
+        <p>Some text2</p>
+
+        <h1 class = "BTS22">Big some tekst2</h1>
+        <p>Some text2</p>
+
+    </div>
+
+    <p class="scrollable-place">
+        <button onclick="disableScroll()">Disable Scrolling</button>
+        <button onclick="enableScroll()">Enable Scrolling</button>
+    </p>
+
+    <div class="fixed">
+        <button onclick="Down()">Up</button>
+        <p></p>
+        <button onclick="Up()">Down</button>
+    </div>
+
+</body>
+
+<script>
+    ImproveSize();
+</script>
+</html>
