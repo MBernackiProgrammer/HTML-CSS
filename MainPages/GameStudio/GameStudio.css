@@ -1,37 +1,44 @@
-.block1
+.block
 {
     border: solid 1px red;
     font: 15px Calibri;
     margin: 0px;
-    
-    
-}
-
-#BTS11 
-{
     position: relative;
 }
 
-.t{
-    position: relative;
-    left:500px;
-}
-#BTS12
+.block ul
 {
-    
-    left:500px;
-    position: relative;
+    list-style: none;
 }
 
-#BTS21 
-{
+#HBB11{
     position: relative;
+    width: 25%;
+    height: 100px;
 }
 
-#BTS22
+#HBB12
 {
     position: relative;
+    width: 25%;
+    height: 100px;
+    left: 25%;
 }
+
+#HBB21
+{
+    position: relative;
+    width: 500px;
+    height: 100px;
+}
+
+#HBB22
+{
+    position: relative;
+    width: 500px;
+    height: 100px;
+}
+
 .fixed {
     position: fixed;
     bottom: 0;
@@ -39,6 +46,3 @@
     width: 300px;
     border: 3px solid #73AD21;
   }
-
-
-    

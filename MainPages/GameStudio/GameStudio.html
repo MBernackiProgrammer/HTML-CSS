@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Studio</title>
 
-    <script>src="GameStudio.js"</script>
-    <link rel="stylesheet" type="text/css"href="mystyle.css">
+    <script type="text/javascript" src="GameStudio.js"></script>
+    
+    
 
     <style>
         div.fixed {
@@ -16,69 +17,104 @@
           right: 0;
           border: 3px solid #73AD21;
         }
+
+        html 
+        {
+            scroll-behavior: smooth;
+        }
+
     </style>
 
 </head>
 
-<body >
+<body onscroll="myFunction1()">
 
-    <div class = "block1" id = "block" name = "block">
+    <div class = "block" id = "block" name = "block">
+        <ul id = "HBB11">
+            <center>
+                <li>
+                    <h1 id = "BTS11" class = "t">Big tekst1</h1>
+                </li>
 
-        <h1 id = "BTS11" class = "t">Big some tekst</h1>
-        <p>Some text</p>
+                <li>
+                    <p id = "BTS11">Some text1</p>
+                </li>
+            </center>
+        </ul>
 
-        <h1 id = "BTS12">Big some tekst</h1>
-        <p>Some text</p>
+        
+        <ul id = "HBB12">
+            <center>
+                <li>
+                    <h1 id = "BTS12">Big tekst1</h1>
+                </li>
+
+                <li>
+                    <p id = "STS12">Some text1</p>
+                </li>
+            </center>
+        </ul>
+
+        
+        
 
     </div>
 
-    <div class = "block1" id = "block1" name = "block">
+    <div class = "block" id = "block1" name = "block">
 
-        <h1 class = "BTS21">Big some tekst</h1>
-        <p>Some text</p>
+        <ul id = "HBB21">
+            <center>
+                <li>
+                    <h1 class = "BTS21">Big some tekst2</h1>
+                </li>
 
-        <h1 class = "BTS22">Big some tekst</h1>
-        <p>Some text</p>
+                <li>
+                    <p class = "BTS21">Some text2</p>
+                </li>
+            </center>
+        </ul>
+
+        <ul id = "HBB12">
+            <center>
+                <li>
+                    <h1 class = "BTS22">Big some tekst2</h1>
+                </li>
+
+                <li>
+                    <p class = "BTS22">Some text2</p>
+                </li>
+            </center>
+        </ul>
 
     </div>
 
-    <div class = "demo3">
-    
+    <div class = "block" id = "block2" name = "block">
+
+        <h1 class = "BTS21">Big some tekst2</h1>
+        <p>Some text2</p>
+
+        <h1 class = "BTS22">Big some tekst2</h1>
+        <p>Some text2</p>
+
     </div>
 
-    <p id = "testid">Text 1</p>
-    <button type="button">Click Me</button>
+    <p class="scrollable-place">
+        <button onclick="disableScroll()">Disable Scrolling</button>
+        <button onclick="enableScroll()">Enable Scrolling</button>
+    </p>
 
     <div class="fixed">
-        <button>Up</button>
-        <button>Down</button>
+        <button onclick="Down()">Up</button>
+        <p></p>
+        <button onclick="Up()">Down</button>
     </div>
-</body>
-<script>
-    function ImproveSize()
-{
-    var element = document.getElementById("block");
-    //var element = document.getElementsById("block");
-    document.get
-    
-    var h = innerHeight;
-    var w = innerWidth;
-    
-    var widthReady = String(w);
-    widthReady = widthReady + "px";
-    
-    element.style.height = widthReady;
-    
 
-    var heightReady = String(h);
-    heightReady = heightReady + "px";
-    
-    element.style.height = heightReady;
-    //element.style.width = widthReady; 
-    
-    document.getElementById("block1").style.height = heightReady;
-    document.getElementById("block1").style.width = widthReady;
-}
-ImproveSize();
+</body>
+
+<link rel="stylesheet" type="text/css"href="GameStudio.css">
+
+<script>
+    ImproveSize();
 </script>
+
 </html>
