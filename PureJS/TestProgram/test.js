@@ -1,0 +1,1 @@
+window.print("12344");
