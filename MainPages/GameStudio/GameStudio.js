@@ -3,6 +3,7 @@ let HowManySections = 2;
 var CanScroll = Boolean(true);
 var Ended = Boolean(true);
 var SidePossition = 0;
+var LastPossition = 0;
 
 function Detect() {
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -36,20 +37,7 @@ function Down()
 
 function FindWhereMove()
 {
-    switch(Index)
-    {
-        case 0:
-            location.href="#block";
-            break;
-
-        case 1:
-            location.href="#block1";
-            break;
-
-        case 2:
-            location.href="#block2";
-            break;
-    }
+    window.scrollTo(0, Index*h);
 }
 var h = innerHeight;
 function ImproveSize()
@@ -80,41 +68,73 @@ function ImproveSize()
 
 }
 
-
+function chech()
+{
+   
+    console.log(parseInt(window.scrollY));
+    console.log(parseInt(LastPossition));
+    if(parseInt(window.scrollY) == parseInt(LastPossition))
+    {
+        
+        Ended = Boolean(true);
+    }
+    LastPossition=window.scrollY;
+}
 //var LastPossition = 0;
 //let cos = 0;
 
-function DoFalse()
-{
-    Ended = Boolean(false)
-}
 function myFunction1()
 {
     if(Ended == true)
     {
         Ended = Boolean(false);
-        if(window.scrollY > SidePossition)
+        if(window.scrollY - Index*h > 0)
         {
             Up();
-        } 
-        if(window.scrollY < SidePossition)
+        }
+        else
         {
             Down();
-        } 
-    
+        }
     }
-    if(Ended == false)
-    {
-        if(window.scrollY > Index*h && window.scrollY < Index*h)
+    else{
+        if(window.scrollY > Index*h-2 && window.scrollY < Index*h+2)
         {
-            alert("test");
-            Ended = Boolean(true);
-            SidePossition = window.scrollY;
+            
+                    
+            SidePossition = Index*h;
             
         }
     }
 
+    setTimeout(chech, 1000);
     
+   /*
+   if(Ended == false)
+   {
+       if(Index*h < parseInt(window.scrollY))
+       {
+            
+            Ended = Boolean(true);
+       }    
+       else{
+      //  window.scrollBy(0,90000);
+      window.scrollTo(0, Index*h);
+        
+       }
+   
+   }
+   else
+   {
+    if(window.scrollY - Index*h > 0)
+    {
+        Index = Index + 1;
+        Ended = Boolean(false);
+    }
+   }
+*/
+    
+
     
 
     /*
